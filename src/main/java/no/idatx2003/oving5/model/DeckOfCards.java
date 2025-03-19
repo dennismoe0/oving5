@@ -15,6 +15,10 @@ public class DeckOfCards {
   int deckSize = 52; // Probably stupid but I put it here to be used in methods.
   private final Random random = new Random();
 
+  public int getDeckSize() {
+    return deckSize;
+  }
+
   /**
    * Creates a deck.
    */
