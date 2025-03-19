@@ -11,7 +11,7 @@
     <artifactId>card_game</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>text_api</name>
+    <name>card_game</name>
     <url>http://www.example.com</url>
 
     <properties>
