@@ -12,12 +12,14 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>card_game</name>
-    <url>http://www.example.com</url>
+    <url>https://github.com/dennismoe0/oving5</url>
 
     <properties>
         <!-- Use Java 21 -->
         <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Define JavaFX version -->
+        <javafx.version>20.0.2</javafx.version>
     </properties>
 
     <dependencies>
@@ -28,6 +30,29 @@
             <version>5.10.0</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- JavaFX dependencies -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-base</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -113,7 +138,7 @@
                     <artifactId>javafx-maven-plugin</artifactId>
                     <version>0.0.8</version>
                     <configuration>
-                        <mainClass>Main</mainClass>
+                        <mainClass>no.idatx2003.oving5.CardGameApp</mainClass>
                     </configuration>
                 </plugin>
             </plugins>
