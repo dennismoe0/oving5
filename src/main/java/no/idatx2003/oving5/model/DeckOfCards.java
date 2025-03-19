@@ -36,7 +36,7 @@ public class DeckOfCards {
    */
   public List<PlayingCard> dealHand(int n) {
     if (n < 1 || n > deckSize) {
-      throw new IllegalArgumentException("Number of cards must be between 1 and " + deckSize);
+      throw new IllegalArgumentException("Hand size must be between 1 and " + deckSize);
     }
 
     List<PlayingCard> playerHand = new ArrayList<>(n);
