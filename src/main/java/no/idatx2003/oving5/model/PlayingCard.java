@@ -1,4 +1,4 @@
-package no.ntnu.idatx2003.oving5.model;
+package no.idatx2003.oving5.model;
 
 /**
  * Represents a playing card. A playing card has a number (face) between
